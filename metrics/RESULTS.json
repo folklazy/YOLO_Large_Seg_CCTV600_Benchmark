@@ -957,10 +957,8 @@
       "checkpoint_sha256": "92b3de0065766a17180d6219858717dc9d03cdce8a3ca9576c97fd75aabb64f3",
       "scientific_binding": "aa621de9ab1ca797a8e103df3bfb21f87307fc436f4701da7b094df33e8a68eb",
       "timing": {
-        "clean_rounds": 3,
-        "expected_rounds": 3,
-        "measured_images": 300,
         "state": "COMPLETE",
+        "clean_rounds": 3,
         "primary": {
           "preprocess_ms": {
             "mean": 1.8837022952114542,
@@ -986,6 +984,54 @@
             "p95": 137.04151201527566,
             "std": 19.37679723548936
           },
+          "ultralytics_postprocess_inclusive_ms": {
+            "mean": 17.537378958271194,
+            "median": 11.004769010469317,
+            "p95": 49.17024887399749,
+            "std": 15.820235000290502
+          },
+          "binary_validation_gpu_ms": {
+            "mean": 0.28660785872489214,
+            "median": 0.22107211407274008,
+            "p95": 0.7051576976664368,
+            "std": 0.2074147445087981
+          },
+          "mask_bitpack_gpu_ms": {
+            "mean": 2.0455094861487546,
+            "median": 1.2271610321477056,
+            "p95": 6.197989545762542,
+            "std": 2.0011194789921256
+          },
+          "packed_mask_gpu_to_cpu_ms": {
+            "mean": 1.2202514335513115,
+            "median": 0.8326360257342458,
+            "p95": 3.5715541685931385,
+            "std": 1.119442573157174
+          },
+          "mask_numpy_view_ms": {
+            "mean": 0.021036940161138773,
+            "median": 0.021546962670981884,
+            "p95": 0.027641118504107,
+            "std": 0.006346440010292963
+          },
+          "bbox_gpu_to_cpu_ms": {
+            "mean": 0.08797327366967995,
+            "median": 0.09022303856909275,
+            "p95": 0.12713460018858314,
+            "std": 0.029193278629462766
+          },
+          "bbox_numpy_view_ms": {
+            "mean": 0.005622831328461568,
+            "median": 0.005095964297652245,
+            "p95": 0.008782604709267618,
+            "std": 0.0031599241502186753
+          },
+          "prediction_objects_and_bbox_extract_ms": {
+            "mean": 0.08492892996097605,
+            "median": 0.06502296309918165,
+            "p95": 0.22367689525708556,
+            "std": 0.06380446785632975
+          },
           "rle_preparation_ms": {
             "mean": 64.53143174449603,
             "median": 37.15459106024355,
@@ -1000,9 +1046,34 @@
             "median": 2.313940668012947,
             "p95": 2.3638724365504458,
             "std": 0.02650607427306845
+          }
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolo26x-seg/timing/round1.json",
+            "sha256": "6a9d97743ef0769b4f9e5e755d93e5338301212afc8043c0bec9da0305bba955",
+            "measured_calls": 100,
+            "warmup_calls": 10
           },
-          "parameters": 70693800
-        }
+          {
+            "round": 2,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolo26x-seg/timing/round2.json",
+            "sha256": "fdb89f007ed2e7069899908c51dd86ed36a07853494257940fab8ba91c936ae4",
+            "measured_calls": 100,
+            "warmup_calls": 10
+          },
+          {
+            "round": 3,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolo26x-seg/timing/round3.json",
+            "sha256": "aba24317841c838fdf4728b6b4d37a047941544b1256a58bda218b3cb9c64cdc",
+            "measured_calls": 100,
+            "warmup_calls": 10
+          }
+        ]
       }
     },
     {
@@ -1961,10 +2032,8 @@
       "checkpoint_sha256": "4e53a5f5fd3ee2ae3361c62169c6bb3ed4ae251dd0e57606e230955aa52d919c",
       "scientific_binding": "aa621de9ab1ca797a8e103df3bfb21f87307fc436f4701da7b094df33e8a68eb",
       "timing": {
-        "clean_rounds": 3,
-        "expected_rounds": 3,
-        "measured_images": 300,
         "state": "COMPLETE",
+        "clean_rounds": 3,
         "primary": {
           "preprocess_ms": {
             "mean": 1.9102746822560828,
@@ -1990,6 +2059,54 @@
             "p95": 139.10058467881754,
             "std": 19.703140963020537
           },
+          "ultralytics_postprocess_inclusive_ms": {
+            "mean": 20.10599586647004,
+            "median": 15.364628518000245,
+            "p95": 52.56278971210126,
+            "std": 15.982472286930001
+          },
+          "binary_validation_gpu_ms": {
+            "mean": 0.3271711338311434,
+            "median": 0.2752684522420168,
+            "p95": 0.6918924744240946,
+            "std": 0.2099464605506434
+          },
+          "mask_bitpack_gpu_ms": {
+            "mean": 2.380716701348623,
+            "median": 1.7468376317992806,
+            "p95": 6.1130340094678175,
+            "std": 2.093813176798767
+          },
+          "packed_mask_gpu_to_cpu_ms": {
+            "mean": 1.4117456289629142,
+            "median": 1.0778270661830902,
+            "p95": 3.575159981846811,
+            "std": 1.165556055637081
+          },
+          "mask_numpy_view_ms": {
+            "mean": 0.023438887825856607,
+            "median": 0.022616935893893242,
+            "p95": 0.03447374328970909,
+            "std": 0.006705374957672234
+          },
+          "bbox_gpu_to_cpu_ms": {
+            "mean": 0.09786469240983327,
+            "median": 0.09662145748734474,
+            "p95": 0.1358061912469566,
+            "std": 0.025436346079641226
+          },
+          "bbox_numpy_view_ms": {
+            "mean": 0.006178348169972499,
+            "median": 0.005274428986012936,
+            "p95": 0.01038115005940199,
+            "std": 0.0028530167037607614
+          },
+          "prediction_objects_and_bbox_extract_ms": {
+            "mean": 0.09763462236151099,
+            "median": 0.07685937453061342,
+            "p95": 0.21950055379420524,
+            "std": 0.06527578731448543
+          },
           "rle_preparation_ms": {
             "mean": 76.1869037259991,
             "median": 54.16346387937665,
@@ -2004,9 +2121,34 @@
             "median": 2.152124803047627,
             "p95": 2.1730723902583122,
             "std": 0.011663920097627229
+          }
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolo11x-seg/timing/round1.json",
+            "sha256": "5208c9608853eaa02cfdaddcdef82ab2b45c5303e3f4460d24f0cca1b1089b31",
+            "measured_calls": 100,
+            "warmup_calls": 10
           },
-          "parameters": 62142656
-        }
+          {
+            "round": 2,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolo11x-seg/timing/round2.json",
+            "sha256": "aa028fa32a8654d31b3633b95e2242e21105b2a3ad0db4771c458b76e5c0a474",
+            "measured_calls": 100,
+            "warmup_calls": 10
+          },
+          {
+            "round": 3,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolo11x-seg/timing/round3.json",
+            "sha256": "bb990616f669dfdf76aa375e557e43e9eace04a622b56b2e476fea9657fd0d23",
+            "measured_calls": 100,
+            "warmup_calls": 10
+          }
+        ]
       }
     },
     {
@@ -2965,10 +3107,8 @@
       "checkpoint_sha256": "d7803f5946df2897c1746658bdc46c61c2de1a740ce740804f7099c8abbe660e",
       "scientific_binding": "aa621de9ab1ca797a8e103df3bfb21f87307fc436f4701da7b094df33e8a68eb",
       "timing": {
-        "clean_rounds": 3,
-        "expected_rounds": 3,
-        "measured_images": 300,
         "state": "COMPLETE",
+        "clean_rounds": 3,
         "primary": {
           "preprocess_ms": {
             "mean": 1.958224770302574,
@@ -2994,6 +3134,54 @@
             "p95": 116.4875179878436,
             "std": 15.023383787110687
           },
+          "ultralytics_postprocess_inclusive_ms": {
+            "mean": 15.15212355957677,
+            "median": 11.601084494031966,
+            "p95": 38.504428521264344,
+            "std": 12.161883496646546
+          },
+          "binary_validation_gpu_ms": {
+            "mean": 0.2618550105641286,
+            "median": 0.21681992802768946,
+            "p95": 0.5718985456041992,
+            "std": 0.18048307382547304
+          },
+          "mask_bitpack_gpu_ms": {
+            "mean": 1.7703651427291334,
+            "median": 1.2562120100483298,
+            "p95": 5.041025427635759,
+            "std": 1.5645799082191714
+          },
+          "packed_mask_gpu_to_cpu_ms": {
+            "mean": 1.0374672765222688,
+            "median": 0.7854059804230928,
+            "p95": 2.872168982867152,
+            "std": 0.8833091879306211
+          },
+          "mask_numpy_view_ms": {
+            "mean": 0.02243570750579238,
+            "median": 0.022523454390466213,
+            "p95": 0.03352427156642081,
+            "std": 0.006471729015291979
+          },
+          "bbox_gpu_to_cpu_ms": {
+            "mean": 0.09213640665014584,
+            "median": 0.09045051410794258,
+            "p95": 0.13147903373464945,
+            "std": 0.031442410125169046
+          },
+          "bbox_numpy_view_ms": {
+            "mean": 0.006038674619048834,
+            "median": 0.005390960723161697,
+            "p95": 0.008880544919520617,
+            "std": 0.00425784426485593
+          },
+          "prediction_objects_and_bbox_extract_ms": {
+            "mean": 0.07934404149030645,
+            "median": 0.06680400110781193,
+            "p95": 0.17310592811554673,
+            "std": 0.049278588522103
+          },
           "rle_preparation_ms": {
             "mean": 55.87964891611288,
             "median": 39.74692849442363,
@@ -3008,9 +3196,34 @@
             "median": 3.0680361499544233,
             "p95": 3.161865579872392,
             "std": 0.06501712330721807
+          }
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolov9e-seg/timing/round1.json",
+            "sha256": "59eed2b929c6dfd20afbd709084b1d7887f851e91008d5ec6c05808519738ef9",
+            "measured_calls": 100,
+            "warmup_calls": 10
           },
-          "parameters": 60512800
-        }
+          {
+            "round": 2,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolov9e-seg/timing/round2.json",
+            "sha256": "249ef967c1d51519a948ff9f8aa9e786a1e9de1f9210b1998060d36a0d577574",
+            "measured_calls": 100,
+            "warmup_calls": 10
+          },
+          {
+            "round": 3,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolov9e-seg/timing/round3.json",
+            "sha256": "9601472ddfbe4e16e2ae639ef10a16743aa6647b2afc1d013be332c05b225ca2",
+            "measured_calls": 100,
+            "warmup_calls": 10
+          }
+        ]
       }
     },
     {
@@ -3969,10 +4182,8 @@
       "checkpoint_sha256": "c333d6a7aff884ec821050eacdab29871f3edd10d996cf48746a02f8e01f1b5d",
       "scientific_binding": "aa621de9ab1ca797a8e103df3bfb21f87307fc436f4701da7b094df33e8a68eb",
       "timing": {
-        "clean_rounds": 3,
-        "expected_rounds": 3,
-        "measured_images": 300,
         "state": "COMPLETE",
+        "clean_rounds": 3,
         "primary": {
           "preprocess_ms": {
             "mean": 1.960477545702209,
@@ -3998,6 +4209,54 @@
             "p95": 131.79858099902052,
             "std": 19.426947106585672
           },
+          "ultralytics_postprocess_inclusive_ms": {
+            "mean": 21.864187122167397,
+            "median": 17.32573937624693,
+            "p95": 50.697470281738795,
+            "std": 15.643250901620222
+          },
+          "binary_validation_gpu_ms": {
+            "mean": 0.34859452707072097,
+            "median": 0.2911415649577975,
+            "p95": 0.7032387424260381,
+            "std": 0.2041343599544366
+          },
+          "mask_bitpack_gpu_ms": {
+            "mean": 2.5759555120021105,
+            "median": 1.8785180291160941,
+            "p95": 6.094629375729716,
+            "std": 2.05199950398239
+          },
+          "packed_mask_gpu_to_cpu_ms": {
+            "mean": 1.5052322135306895,
+            "median": 1.1670903768390417,
+            "p95": 3.64402742125094,
+            "std": 1.2024705166038525
+          },
+          "mask_numpy_view_ms": {
+            "mean": 0.024982301983982325,
+            "median": 0.024129520170390606,
+            "p95": 0.035992346238344915,
+            "std": 0.006151592770892289
+          },
+          "bbox_gpu_to_cpu_ms": {
+            "mean": 0.10253634924689929,
+            "median": 0.09762542322278023,
+            "p95": 0.13784286566078663,
+            "std": 0.03207811652275626
+          },
+          "bbox_numpy_view_ms": {
+            "mean": 0.006385337716589372,
+            "median": 0.005647423677146435,
+            "p95": 0.009117170702666046,
+            "std": 0.0023510267370310508
+          },
+          "prediction_objects_and_bbox_extract_ms": {
+            "mean": 0.10992840087662141,
+            "median": 0.08820346556603909,
+            "p95": 0.24330561282113203,
+            "std": 0.08099993917158799
+          },
           "rle_preparation_ms": {
             "mean": 82.50386744349574,
             "median": 59.543097973801196,
@@ -4012,10 +4271,36 @@
             "median": 1.9849126001354307,
             "p95": 2.1461810261011123,
             "std": 0.17811102821382788
+          }
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolov8x-seg/timing/round1.json",
+            "sha256": "956dc1bae76915afa3c5ddca1e9121873c7e3856112c53c24364dce9fb0f6c73",
+            "measured_calls": 100,
+            "warmup_calls": 10
           },
-          "parameters": 71827888
-        }
+          {
+            "round": 2,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolov8x-seg/timing/round2.json",
+            "sha256": "5f5d63fd4764569e961eeff0400bd56ea81f389f178de95cdb372ab9644ac234",
+            "measured_calls": 100,
+            "warmup_calls": 10
+          },
+          {
+            "round": 3,
+            "state": "CLEAN_COMPLETE",
+            "path": "YOLO_Large_Seg_CCTV600_Benchmark/outputs/cctv600-20261116T073208561699Z/yolov8x-seg/timing/round3.json",
+            "sha256": "4bc51a48642f98f19796b6b5f671a6580313a3c64d455595f9740c4945497c33",
+            "measured_calls": 100,
+            "warmup_calls": 10
+          }
+        ]
       }
     }
-  ]
+  ],
+  "summary_scope": "DERIVED_AFTER_CONTROLLED_TIMING_CONTINUATION"
 }
