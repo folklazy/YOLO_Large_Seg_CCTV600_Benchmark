@@ -1,0 +1,5 @@
+model,state,images,box_ap50_95,box_ap50,box_ap75,precision,recall,f1,tp,fp,fn,timing_state,clean_rounds,inference_mean_ms,adapter_mean_ms,fps,vram_allocated_mib,checkpoint_mb,parameters,gflops_estimate
+yolo26x-seg.pt,NOT_RUN,0,,,,,,,,,,INCOMPLETE,0,,,,,142.129861,,338.2033408
+yolo11x-seg.pt,NOT_RUN,0,,,,,,,,,,INCOMPLETE,0,,,,,125.090821,,297.8924032
+yolov9e-seg.pt,NOT_RUN,0,,,,,,,,,,INCOMPLETE,0,,,,,122.212466,,238.3325696
+yolov8x-seg.pt,NOT_RUN,0,,,,,,,,,,INCOMPLETE,0,,,,,144.101612,,329.1888128
